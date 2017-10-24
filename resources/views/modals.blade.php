@@ -13,7 +13,9 @@
           <div class="form-group">
             <label for="keep" class="form-label">Crear Tarea</label>
             <input type="text" name="keep" placeholder="Escriba la tarea..." v-model="newKeep" class="form-control">
-            <span v-for="error in errors" class="text-danger" v-text="error"></span>
+            <span v-for="error in errors.errors" class="text-danger">
+              <span v-for="ciclo in error" v-text="ciclo"></span>
+            </span>
           </div>
         </div>
         <div class="modal-footer">

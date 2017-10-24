@@ -11026,7 +11026,7 @@ new Vue({
   data: {
     keeps: [],
     newKeep: '',
-    errors: [],
+    errors: '',
     fillKeep: {'id':'','keep':''},
     pagination: {
       'total':0,
@@ -11088,7 +11088,7 @@ new Vue({
       }).then(response => {
         this.getKeeps();
         this.newKeep='';
-        this.errors=[];
+        this.errors='';
         $('#create').modal('hide');
         toastr.success("Nueva tarea creada con exito");
       }).catch(error => {
@@ -11105,7 +11105,7 @@ new Vue({
       axios.put(url, this.fillKeep).then(response => {
         this.getKeeps();
         this.fillKeep={'id':'','keep':''};
-        this.errors=[];
+        this.errors='';
         $('#edit').modal('hide');
         toastr.success("Tarea actualizada con exito");
       }).catch(error => {
