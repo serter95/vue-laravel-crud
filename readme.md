@@ -1,3 +1,9 @@
+# crud_laravel_vue
+=======
+# vue-laravel-crud
+>>>>>>> df8fd83cd50fd27d3f20abe1c2d5477bd5ce7906
+CRUD de Laravel 5.5 y VUEjs
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
